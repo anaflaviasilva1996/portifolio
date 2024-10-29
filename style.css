@@ -1,0 +1,175 @@
+html, body {
+    background-color: #151515;
+    color: #FFFFFF;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+h1{
+    font-size: 80px;
+    margin: 0;
+}
+
+h2{
+    font-weight: 700;
+    font-size: 40px;
+}
+
+h3{
+    font-weight: 700;
+    font-size: 30px;
+    color: #b11ca4;
+}
+
+h4{
+    font-weight: 700;
+    font-size: 30px;
+    color: #7b7b7b;
+    margin: 0;
+}
+
+h5{
+    font-weight: 400;
+    font-size: 25px;
+    margin: 0;
+}
+
+p{
+    color: #7b7b7b;
+}
+
+
+button{
+    padding: 15px 40px;
+    cursor: pointer;
+    background-color: transparent;
+    color: #b11ca4;
+    border: 2px solid #b11ca4;
+    border-radius: 5px;
+    transition: 0.8s;
+}
+
+
+button:hover {
+    background-color: #00181a ;
+}
+
+.subtitle {
+    max-width: 550px;
+}
+
+
+.primary-color{
+    color:#b11ca4;
+}
+
+.header-container {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container {
+    width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.spacing {
+    margin-top: 140px;
+}
+
+.about-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #7b7b7b;
+    gap: 100px;
+}
+
+.tec-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.projects-container{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.card{
+    width: 400px;
+    background-color: #292929;
+    padding: 45px;
+}
+
+.card-title{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+
+}
+
+.card-text{
+    margin: 30px 0;
+}
+
+.card-button{
+    width: 100%;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.contact-text{
+    margin: 0;
+    padding: 0;
+    color: #FFFFFF;
+}
+
+@media (max-width: 768px) {
+
+    .header-container {
+        flex-direction: column;
+        gap: 100px;
+    }
+
+    .about-container{
+        flex-direction: column-reverse;
+    }
+
+    img {
+        width: 50%;
+        max-width: 50%;
+    }
+
+    .tec-container{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .projects-container{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .spacing {
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 1200px){
+    .container{
+        width: 100%;
+        padding: 0 90px;
+    }
+}
